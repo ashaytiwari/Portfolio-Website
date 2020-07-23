@@ -1,0 +1,578 @@
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+/* code{
+    background-color: black;
+    color: whitesmoke ;
+    font-family: Damion;
+    font-size: 20px;
+    color: #d8ab4e;
+    text-align: left;
+} */
+/* Sidebar starts */
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: #171717;
+}
+.sidebar li{
+    list-style-type:none;
+}
+.sidebar a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #d8ab4e;
+    font-size: 14px;
+    letter-spacing: 6px;
+    font-family:Baumans ;
+}
+.sidebar a.active{
+    background-color: black;
+}
+.sidebar a:hover{
+    background-color: black;
+}
+.sidebar .fas{
+    font-size: 35px;
+    color: whitesmoke;
+}
+.sidebar .avatar{
+    position: relative;
+    cursor: pointer;
+}
+.sidebar .avatar-image{
+    width: 100%;
+    height: 210px;
+}
+.sidebar .overlay{
+    position: absolute;
+    bottom: 0;
+    background: black;
+    color: #d8ab4e;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family:Baumans ;
+}
+.sidebar .avatar:hover .overlay{
+    opacity: 0.8;
+}
+
+
+/* Home starts */
+.home{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-left: 173px;
+}
+.one{
+    grid-column: 1 / 2;
+}
+.two{
+    grid-column: 2 / 3;
+    padding: 50px;
+}
+.three{
+    grid-column: 2 / 3;
+   
+}
+.home img{
+    width: 100%;
+    height: 700px;
+}
+.home-content h1{
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: #d8ab4e;
+    font-family: Yatra One;
+    letter-spacing: 5px;
+}
+.home-content h4{
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: Aclonica;
+}
+
+/* Home closes */
+
+/* About starts */
+.about{
+    padding: 40px 120px 0 120px;
+    margin-left: 173px;
+}
+.about .about-icon{
+    width: 350px;
+}
+.about .about-content{
+    padding-right: 50px;
+}
+.about h1, .about h2{
+    color: #d8ab4e;
+    font-family: Baumans;
+}
+.about h1{
+    font-size: 50px;
+    text-decoration: underline;
+}
+.about h2{
+    text-align: center;
+    font-size: 40px;
+}
+.about h3{
+    font-size: 30px;
+    color: #d8ab4e;
+    font-family: Baumans;
+}
+.about p{
+    color: whitesmoke;
+    font-family: Ubuntu;
+    font-size: 18px;
+}
+.about .design-card{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #171717;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+.about .design-content{
+    padding-left: 200px;
+}
+.about .design-card i{
+    font-size: 90px;
+    color: #d8ab4e;
+}
+.about .thumbnail{
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0; 
+}
+.about .thumbnail:hover{
+  box-shadow: 5px 0px 40px #d8ab4e;
+}
+.about .skills-card{
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.about .skills-card h5{
+    color: #171717;
+    font-size: 20px;
+    font-family: Yatra One;
+}
+.about .skills-card .progress-bar{
+    background-color: #d8ab4e;
+}
+.about .skills-card .progress{
+    background-color: #171717;
+}
+/* About closes */
+
+/* Project starts */
+.projects{
+    padding: 40px 120px 0 120px;
+    margin-left: 173px;
+}
+.projects h1, .projects h2{
+    color: #d8ab4e;
+    font-family: Baumans;
+}
+.projects h1{
+    font-size: 50px;
+    text-decoration: underline;
+}
+.projects h2{
+    text-align: center;
+    font-size: 40px;
+}
+.projects .projects-card{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+
+}
+.projects .projects-card:hover{
+    box-shadow: 5px 0px 40px #d8ab4e;
+  }
+.projects .projects-content a{
+    text-decoration: none ;
+}
+.projects .projects-card h3{
+    font-size: 25px;
+    color: black;
+    font-family: Ubuntu;
+}
+.projects .projects-card h5{
+    font-size: 18px;
+    color: #d8ab4e;
+    font-family: Ubuntu;
+}
+.projects .projects-card p{
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: #d8ab4e;
+}
+/* Projects closes */
+
+
+/* Contact starts */
+.contact{
+    padding: 40px 120px 0 120px;
+    margin-left: 173px;
+}
+.contact h1,  .contact h2{
+    font-family: Baumans;
+}
+.contact  h1{
+    font-size: 50px;
+    text-decoration: underline;
+    color: #d8ab4e;
+}
+.contact  h2{
+    text-align: center;
+    font-size: 35px;
+    color: #d8ab4e;
+}
+.contact p{
+    font-size: 18px;
+    font-family: Baumans;
+    color: whitesmoke;
+}
+.contact .info{
+    padding-top:50px ;
+}
+.contact .info i{
+    color: #d8ab4e;
+}
+.contact .contact-card button{
+    padding: 10px 20px;
+    font-family: Baumans;
+    font-size: 20px;
+    background-color: black;
+    border: 2px solid #d8ab4e;
+    color: whitesmoke;
+}
+.contact .contact-card button:hover{
+    padding: 10px 20px;
+    font-family: Baumans;
+    font-size: 18px;
+    background-color: black;
+    border: 2px solid whitesmoke;
+    color: #d8ab4e;
+}
+.contact .contact-card button i{
+    color: #d8ab4e;
+}
+.contact .contact-card .form-group input, .contact .contact-card  .form-group textarea{
+    font-family: Baumans;
+    color: whitesmoke;
+    background-color: black;
+    border: 2px solid #d8ab4e;
+    font-size: 18px;
+}
+/* Contact closes */
+
+/* Social Starts */
+.social{
+    margin-left: 173px;
+    padding-bottom: 20px;
+}
+.social a{
+    text-decoration: none;
+}
+.social i{
+    color: #d8ab4e;
+    font-size: 40px;
+    padding: 12px 14px
+}
+/* Social closes */
+.footer{
+    margin-left: 173px;
+}
+.footer #myBtn{
+    color: #d8ab4e;
+    font-size: 30px;
+}
+.footer h3{
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: Ubuntu;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1000px){
+    .sidebar .avatar-image{
+        height: 250px;
+    }
+    .home{
+        grid-template-columns: 10% 80% 10%;
+    }
+    .about .thumbnail{
+        height: auto;
+    }
+    .about .about-part{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    .about .about-part .ds{
+        height: 356px;
+    }
+    .about .about-part .bootstrap{
+        height: 375px;
+    }
+}
+@media screen and (max-width: 925px){
+    .sidebar .fas{
+        font-size: 50px;
+    }
+    .sidebar p{
+        font-size: 22px;
+    }
+    .about .about-part .ds{
+        height: 333px;
+    }
+    .about .about-part .bootstrap{
+        height: 342px;
+    }
+}
+@media screen and (max-width: 850px){
+    .home h1{
+        font-size: 50px;
+    }
+    .home h4{
+        font-size: 40px;
+    }
+    .about, .projects, .contact {
+        padding: 40px 40px 0 70px
+    }
+    .about p, .about .design-content p, .about .develop-content p, .contact p{
+        font-size: 22px;
+    }
+    .about .design-content, .about .develop-content{
+        text-align: center;
+    }
+    .sidebar .fas{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 750px){
+    .home h1{
+        font-size: 55px;
+    }
+    .home h4{
+        font-size: 28px;
+    }
+    .home{
+        display: contents;
+    }
+    .home-content{
+        margin-left: 160px;
+    }
+    .home img{
+        width: 500px;
+    }
+    .about .about-part .ds{
+        height: 310px;
+    }
+    .about .about-part .bootstrap{
+        height: 318px;
+    }
+}
+@media screen and (max-width:700px){
+    .sidebar{
+        width: 100%;
+        position: relative;
+        height: auto;
+        text-align: center;
+    }
+    .sidebar .avatar-image, .sidebar p{
+        display: none;
+    }
+    .sidebar a{
+        float: left;
+        padding: 15px 25px;
+        text-align: center;
+    }
+    .sidebar .fas{
+        font-size:60px !important;
+        color: #d8ab4e;
+    }
+    .sidebar .fas:hover{
+        color: whitesmoke;
+    }
+    .sidebar-content{
+        margin-left: 100px;
+    }
+    .home-content, .about, .projects, .contact, .social, .footer{
+        margin-left: 0;
+        width: 100%;
+    }
+    .home{
+        width: 100%;
+    }
+    .about .about-part .ds{
+        height: 358px;
+    }
+    .about .about-part .bootstrap{
+        height: 382px;
+    }
+}
+@media screen and (max-width: 630px){
+    .sidebar a{
+        padding: 15px 20px;
+    }
+    .sidebar .fas{
+        font-size: 45px !important;
+    }
+    .sidebar-content{
+        margin-left: 100px;
+    }
+    .about .about-part .ds{
+        height: 335px;
+    }
+    .about .about-part .bootstrap{
+        height: 344px;
+    }
+}
+@media screen and (max-width: 530px){
+    .sidebar .fas{
+        font-size: 45px !important;
+    }
+    .sidebar-content{
+        margin-left: 60px;
+    }
+    .about .about-part .ds{
+        height: 286px;
+    }
+    .about .about-part .bootstrap{
+        height: 295px;
+    }
+    .footer h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    .sidebar{
+        width: 114%;
+    }
+    .sidebar a{
+        padding: 15px 17px;
+    }
+    .sidebar .fas{
+        font-size: 45px !important;
+    }
+    .sidebar-content{
+        margin-left: 90px;
+    }
+    .home img{
+        width:420px;
+    }
+    .home-content, .about, .projects, .contact, .social, .footer{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .sidebar {
+        width: 116%;
+    }
+    .sidebar a{
+        padding: 15px 15px;
+    }
+    .sidebar .fas{
+        font-size: 40px !important;
+    }
+    .sidebar-content{
+        margin-left: 40px;
+    }
+    .about .about-part .ds{
+        height: 240px;
+    }
+    .about .about-part .bootstrap{
+        height: 251px;
+    }
+    .home-content, .about, .projects, .contact, .social, .footer{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding-right: 0;
+    }
+    .about .about-content{
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 365px){
+    .sidebar{
+        width: 127%;
+    }
+    .sidebar a{
+        padding: 15px 15px;
+    }
+    .sidebar .fas{
+        font-size: 40px !important;
+    }
+    .sidebar-content{
+        margin-left: 60px;
+    }
+    .home img{
+        width: 380px;
+    }
+    .about .about-part .ds{
+        height: 227px;
+    }
+    .about .about-part .bootstrap{
+        height: 230px;
+    }
+}
+@media screen and (max-width: 325px){
+    .sidebar a{
+        padding: 15px 12px;
+    }
+    .sidebar .fas{
+        font-size: 35px !important;
+    }
+    .sidebar-content{
+        margin-left: 50px;
+    }
+    .home h1{
+        font-size: 45px;
+    }
+    .home h4{
+        font-size: 25px;
+    }
+    .home img{
+        width: 327px;
+        height: 540px;
+    }
+    .about .about-icon{
+        width: 300px;
+    }
+    .about .about-part .ds{
+        height: 205px;
+    }
+    .about .about-part .bootstrap{
+        height: 210px;
+    }
+    .about h1, .projects h1, .contact h1{
+        font-size: 45px;
+    }
+}
+
+
